@@ -1,0 +1,55 @@
+/* Centering and layout adjustments */
+.container-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.top-header {
+    background-color: black;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 10px;
+    list-style: none;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.item6 {
+    color: black;
+    background-color: gold;
+}
+
+.header-list {
+    padding: 10px 20px;
+}
+
+.dorsia-logo {
+    width: 75px;
+}
+
+/* Container-middle styles for centering the box */
+.container-middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: black;
+}
+
+.moto {
+    color: black;
+    background-color: red;
+}
+
+/* Box containing the video */
+/* Removed the universal selector affecting all elements */
