@@ -40,16 +40,22 @@ ul {
 /* Container-middle styles for centering the box */
 .container-middle {
     display: flex;
+    flex-direction: column; /* Stack items vertically */
     justify-content: center;
     align-items: center;
     height: 100vh; /* Full viewport height */
     background-color: black;
 }
 
-.moto {
-    color: black;
-    background-color: red;
+/* Quote styling */
+.quote {
+    margin-top: 20px; /* Space between carousel and quote */
+    padding: 20px; /* Padding around the quote */
+    text-align: center; /* Center text horizontally */
 }
 
-/* Box containing the video */
-/* Removed the universal selector affecting all elements */
+.quote p {
+    color: white;
+    font-weight: bold;
+    font-size: 24px; /* Adjust size as needed */
+}
