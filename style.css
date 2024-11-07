@@ -1,4 +1,4 @@
-/* Centering and layout adjustments */
+/* Base styling for larger screens */
 .container-main {
     display: flex;
     justify-content: center;
@@ -6,7 +6,6 @@
     align-items: center;
 }
 
-/* Header section */
 .top-header {
     background-color: black;
     width: 100%;
@@ -37,25 +36,112 @@ ul {
     width: 75px;
 }
 
-/* Container-middle styles for centering the box */
 .container-middle {
     display: flex;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     background-color: black;
 }
 
-/* Quote styling */
 .quote {
-    margin-top: 20px; /* Space between carousel and quote */
-    padding: 20px; /* Padding around the quote */
-    text-align: center; /* Center text horizontally */
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
 }
 
 .quote p {
     color: white;
     font-weight: bold;
-    font-size: 24px; /* Adjust size as needed */
+    font-size: 24px;
+}
+
+/* Medium screens: Laptops and tablets */
+@media (max-width: 1024px) {
+    .container-middle {
+        height: 80vh;
+    }
+
+    .carousel-inner video,
+    .carousel-inner img {
+        max-width: 90%;
+        height: auto;
+    }
+
+    .dorsia-logo {
+        width: 60px;
+    }
+
+    ul {
+        font-size: 20px;
+    }
+
+    .header-list {
+        padding: 8px 15px;
+    }
+
+    .quote p {
+        font-size: 20px;
+        margin-top: 15px;
+    }
+}
+
+/* Small screens: Tablets and large phones */
+@media (max-width: 768px) {
+    .container-middle {
+        height: 70vh;
+        padding: 10px;
+    }
+
+    .carousel-inner video,
+    .carousel-inner img {
+        max-width: 100%;
+    }
+
+    .dorsia-logo {
+        width: 50px;
+    }
+
+    ul {
+        font-size: 16px;
+    }
+
+    .header-list {
+        padding: 5px 10px;
+    }
+
+    .quote p {
+        font-size: 18px;
+    }
+}
+
+/* Extra small screens: Small phones */
+@media (max-width: 480px) {
+    .container-middle {
+        height: 60vh;
+    }
+
+    .carousel-inner video,
+    .carousel-inner img {
+        max-width: 100%;
+    }
+
+    .dorsia-logo {
+        width: 40px;
+    }
+
+    ul {
+        font-size: 14px;
+        flex-wrap: wrap; /* Stack items if they don’t fit */
+    }
+
+    .header-list {
+        padding: 3px 5px;
+    }
+
+    .quote p {
+        font-size: 16px;
+        padding: 10px;
+    }
 }
