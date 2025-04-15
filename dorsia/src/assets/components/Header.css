@@ -1,0 +1,18 @@
+.navbar {
+    background-color: rgba(0, 0, 0, 0.288);
+    position: fixed;
+}
+
+.navbar > ul {
+    display: flex;
+    
+}
+
+.navbar > ul > li {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.navbar > ul >li:hover {
+    background-color: yellow;
+}
